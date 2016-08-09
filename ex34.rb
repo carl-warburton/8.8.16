@@ -51,9 +51,20 @@ end
 tutorial1 = Tutorial.new("Object Oriented Ruby", :ruby, :medium)
 tutorial2 = Tutorial.new("Introduction to JavaScript", :javascript, :easy)
 tutorial3 = Tutorial.new("HTTP Requests, AJAX and APIs", :javascript, :medium)
+tutorial4 = Tutorial.new("tutorial4", :javascript, :expert)
+tutorial5 = Tutorial.new("tutorial5", :ruby, :easy)
+tutorial6 = Tutorial.new("tutorial6", :ruby, :expert)
 
 tutorial1.is_harder_than?(tutorial2)
 # You cannot compare a Ruby with a JavaScript tutorial
 
 tutorial2.is_harder_than?(tutorial1)
 # You cannot compare a JavaScript with a Ruby tutorial
+
+tutorial2.is_harder_than?(tutorial3)
+
+tutorial5.is_harder_than?(tutorial1)
+
+tutorial6.is_harder_than?(tutorial2)
+
+tutorial4.is_harder_than?(tutorial3)
